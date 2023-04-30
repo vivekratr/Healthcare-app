@@ -51,10 +51,11 @@
 		input {border:0;outline:0;}
 input:focus {outline:none!important;}
 	</style>
+	
 </head>
 <body>
    <div id="top_header" >
-	<img style="width:100px" src="logo.png" alt="wecare">
+	<img style="width:100px" src="../static/logo.png" alt="wecare">
 	<div id="navbar" style="position: absolute;
 	width: 1110.25px;
 	height: 42.11px;
@@ -111,15 +112,16 @@ input:focus {outline:none!important;}
 		border-radius: 30px;
 		color: #535F82;
 		">
-		<input type="text" id="gpt_inp" placeholder="Let's solve your queries today!!" style="text-decoration:none; width: 400px; margin-left: 25px ; margin-top: -2px; height: 30px; border: none; ">
-		<script>
-			var ak = document.getElementById("gpt_inp");
-			ak.addEventListener("onclick", function() {
-			  ak.style.border = "white";
-			});
-		  </script>
-		<img src="arrow.png" style = "width: 30px;position: absolute; left: 475px;">
-			<a href="#" style="text-decoration: none;padding-top:40px;padding-left:40px;font-size:20px;"> </a>
+		<form method="POST" action="/gpt">
+		<input type="text" id="input-field" name="input-field" placeholder="Let's solve your queries today!!" style="text-decoration:none; width: 400px; margin-left: 25px ; margin-top: -2px; height: 30px; border: none; ">
+		
+		
+		<!-- <a href="/gpt" method ='POST' type="submit"><img  id='send-button' src="../static/arrow.png" alt="aa"  style = "width: 30px;position: absolute; left: 475px;"></a> -->
+		<input type="image" style = "width: 30px;position: absolute; left: 475px;" src="../static/arrow.png" alt="Submit" />
+		<div id="output" style="padding: 30px; font-size: large; text-align:justify;color: black; top: 40px;left: 40px; position: relative; background-color: white; width: auto; height: auto;max-width: 400px; max-height: 100px; overflow: auto;">{{output}}</div>
+	</form >
+		
+		
 		</div>
 
 
@@ -175,7 +177,7 @@ health.</h3>
      
 		</div>
 	</div>
-    <img src="landing_top_lady.png" alt="" style="position: absolute; width: 650px ;right:100px; top: 28px; border-radius: 10000px;">
+    <img src="../static/landing_top_lady.png" alt="" style="position: absolute; width: 650px ;right:100px; top: 28px; border-radius: 10000px;">
    
   
 >
@@ -192,7 +194,7 @@ health.</h3>
 	background: #FBFBFB;
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 	border-radius: 7px;">
-		<img src="heart.png" style="width:48px; left: 75px;position: relative; top: 40px;" height="48px">
+		<img src="../static/heart.png" style="width:48px; left: 75px;position: relative; top: 40px;" height="48px">
 		<p style="font-family: 'Inter';
 		font-style: normal;
 		font-weight: 400;
@@ -227,7 +229,7 @@ height: 26px;
 		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 		border-radius: 47px;">
 		<p style="padding-top: 6px; padding-left: 8px;">Appointment <p>
-			<img src="arrow.png" width="19px" height="20px" style="position: relative; left: 104px;top:-18px">
+			<img src="../static/arrow.png" width="19px" height="20px" style="position: relative; left: 104px;top:-18px">
 	</div>
 	</div>
 
@@ -242,7 +244,7 @@ height: 26px;
 	background: #FBFBFB;
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 	border-radius: 7px;">
-	<img src="Peditracian_child.png" height="48px" style="width:48px; left: 75px;position: relative; top: 40px;">
+	<img src="../static/Peditracian_child.png" height="48px" style="width:48px; left: 75px;position: relative; top: 40px;">
 	<p style="font-family: 'Inter';
 		font-style: normal;
 		font-weight: 400;
@@ -273,7 +275,7 @@ position: relative;">Pediatrics is medical care for children and adolescents up 
 		background: #FFFFFF;
 		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 		border-radius: 47px;"><p style="padding-top: 6px; padding-left: 8px;">Appointment <p>
-			<img src="arrow.png" width="19px" height="20px" style="position: relative; left: 104px;top:-18px"></div>
+			<img src="../static/arrow.png" width="19px" height="20px" style="position: relative; left: 104px;top:-18px"></div>
 	</div>
 	<div id ="appoint02" style="position: absolute;
 			width: 130px;
@@ -283,7 +285,7 @@ position: relative;">Pediatrics is medical care for children and adolescents up 
 		background: #ffffff;
 		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 		border-radius: 47px;"><p style="padding-top: 6px; padding-left: 8px;">Appointment <p>
-			<img src="arrow.png" width="19px" height="20px" style="position: relative; left: 104px;top:-18px"></div>
+			<img src="../static/arrow.png" width="19px" height="20px" style="position: relative; left: 104px;top:-18px"></div>
 	</div>
 	
 	<div id="block3" style="
@@ -297,7 +299,7 @@ position: relative;">Pediatrics is medical care for children and adolescents up 
 	background: #FBFBFB;
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 	border-radius: 7px;">
-	<img src="gyno.png" height="48px" style="width:48px; left: 75px;position: relative; top: 40px;">
+	<img src="../static/gyno.png" height="48px" style="width:48px; left: 75px;position: relative; top: 40px;">
 	<p style="font-family: 'Inter';
 		font-style: normal;
 		font-weight: 400;
@@ -329,7 +331,7 @@ position: relative;">Specializing in women's reproductive health, including diag
 	background: #FBFBFB;
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 	border-radius: 7px;">
-	<img src="mental.png" height="48px" style="width:48px; left: 75px;position: relative; top: 40px;">
+	<img src="../static/mental.png" height="48px" style="width:48px; left: 75px;position: relative; top: 40px;">
 	<p style="font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
@@ -360,7 +362,7 @@ position: relative;">Specializing in women's reproductive health, including diag
 		background: #FFFFFF;
 		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 		border-radius: 47px;"><p style="padding-top: 6px; padding-left: 8px;">Appointment <p>
-			<img src="arrow.png" width="19px" height="20px" style="position: relative; left: 104px;top:-18px"></div>
+			<img src="../static/arrow.png" width="19px" height="20px" style="position: relative; left: 104px;top:-18px"></div>
 	
 	</div>
 	
@@ -448,7 +450,7 @@ Trust us to provide you with exceptional medical care.
 </div>
 
 <div >
-	<img src="mid_image(1).png" alt="" style="width:514px;
+	<img src="../static/mid_image(1).png" alt="" style="width:514px;
 	height: 417px;
 	left: 50px;
 	top: -240px;
@@ -492,7 +494,7 @@ color: #000000;
 	background: #FBFBFB;
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 	border-radius: 7px;">
-	<img src="dr_1.png" alt="" style="position: relative;
+	<img src="../static/dr_1.png" alt="" style="position: relative;
 	width: 145px;
 height: 141px;
 	left: 23px;
@@ -544,7 +546,7 @@ height: 141px;
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 	border-radius: 7px;">
 	
-	<img src="dr_2.png" alt="" style="position: relative;
+	<img src="../static/dr_2.png" alt="" style="position: relative;
 	width: 145px;
 height: 141px;
 	left: 23px;
@@ -591,7 +593,7 @@ height: 141px;
 	float: left;
 	background: #FBFBFB;
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-	border-radius: 7px;"><img src="dr_3.png" alt="" style="position: relative;
+	border-radius: 7px;"><img src="../static/dr_3.png" alt="" style="position: relative;
 	width: 145px;
 height: 141px;
 	left: 23px;
@@ -638,7 +640,7 @@ height: 141px;
 	background: #FBFBFB;
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 	border-radius: 7px;">
-	<img src="dr_4.png" alt="" style="position: relative;
+	<img src="../static/dr_4.png" alt="" style="position: relative;
 	width: 145px;
 height: 141px;
 	left: 23px;
@@ -721,7 +723,7 @@ What Our Clients Say
 		"I had a great experience at this healthcare facility. The staff was professional and attentive, and the facilities were clean and modern."
 
 		</div>
-		<img src="c1.jpg" alt="" style="position: absolute;
+		<img src="../static/c1.jpg" alt="" style="position: absolute;
 		width: 60px;
 		height: 60px;
 		left: 267px;
@@ -756,7 +758,7 @@ What Our Clients Say
 		color: #000000;">
 		"I highly recommend this healthcare provider. They were knowledgeable, compassionate, and helped me get the care I needed."
 	</div>
-	<img src="c2.jpg" alt="" style="position: absolute;
+	<img src="../static/c2.jpg" alt="" style="position: absolute;
 	width: 60px;
 	height: 60px;
 	left: 271px;
@@ -795,7 +797,7 @@ What Our Clients Say
 		"I've been a patient at this healthcare center for years and have always been impressed with the level of care I receive."
 
 		</div>
-		<img src="c3.jpg" alt="" style="position: absolute;
+		<img src="../static/c3.jpg" alt="" style="position: absolute;
 		width: 60px;
 		height: 60px;
 		left: 263px;
@@ -820,7 +822,7 @@ What Our Clients Say
 
 			</div>
 			<div id="logo_foot" >
-				<img src="logo.png" alt="" style="position: absolute;
+				<img src="../static/logo.png" alt="" style="position: absolute;
 				width: 123px;
 				height: 124px;
 				left: 124px;
@@ -1105,19 +1107,19 @@ What Our Clients Say
 	line-height: 16px;
 	
 	color: #A19898">Qualified Doctors</div>
-	<img src="facebook.png" alt="" style="position :relative;
+	<img src="../static/facebook.png" alt="" style="position :relative;
 	width:25px;
 	height:30px;
 	left:150px;
 	top:110px;">
 	
-	<img src="twitter.png" alt="" style="position :relative;
+	<img src="../static/twitter.png" alt="" style="position :relative;
 	width:25px;
 	height:30px;
 	left:150px;
 	top:110px;">
 	
-	<img src="instagram.png" alt="" style="position :relative;
+	<img src="../static/instagram.png" alt="" style="position :relative;
 	left:150px;
 	top:110px;
 	width:25px;
@@ -1125,7 +1127,7 @@ What Our Clients Say
 	">
 
 	
-	<img src="github.png" alt="" style="position :relative;
+	<img src="../static/github.png" alt="" style="position :relative;
 	width:25px;
 	height:30px;
 	left:150px;
