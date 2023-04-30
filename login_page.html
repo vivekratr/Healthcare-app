@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login - Healthcare Website</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+        background-color: #F7F7F7;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url('https://i.imgur.com/2T0T0Tj.png');
+        background-size: cover;
+      }
+      .login-form {
+        max-width: 360px;
+        width: 100%;
+        background-color: #FFFFFF;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+        text-align: center;
+      }
+      .logo {
+        margin-bottom: 20px;
+      }
+      .logo img {
+        max-width: 70%;
+        height: auto;
+      }
+      .heading {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #252525;
+      }
+      .input-field {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+      .input-field label {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #4F4F4F;
+        text-align: left;
+      }
+      .input-field input {
+        border: 1px solid #E5E5E5;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 16px;
+        color: #4F4F4F;
+      }
+      .submit-btn {
+        background-color: #1ABC9C;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .submit-btn:hover {
+        background-color: #17A086;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form class="login-form">
+        <div class="logo">
+          <img src="https://i.imgur.com/g05v7Ur.png" alt="Healthcare Logo">
+        </div>
+        <h1 class="heading">Your health is our priority</h1>
+        <div class="input-field">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="input-field">
+          <label for="mobile">Mobile Number</label>
+          <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+        </div>
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

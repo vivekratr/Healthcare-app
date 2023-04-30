@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Details</title>
+</head>
+<body>
+    <style>
+
+        
+		*{
+			margin: 0px;
+		}
+		#top_header{
+			width: auto px;
+			height: 592px;
+            /* position: absolute; */
+            /* left: 0px;
+            top: 0px; */
+		
+			
+
+			background: linear-gradient(180deg, #364859 0%, rgba(157, 200, 243, 0) 100%);
+
+
+
+		}
+		nav {
+			/* background-color: #333; */
+			overflow: hidden;
+		  }
+		  
+		  nav a {
+			display: inline-block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		  }
+		  nav ul li {
+			display: inline-block;
+		  }
+		  
+		  nav a:hover {
+			/* background-color: #ddd; */
+			color: black;
+		  }
+		  input {border:0;outline:0;}
+input:focus {outline:none!important;}
+		
+	</style>
+</head>
+<body>
+   <div id="top_header" >
+	<img style="width:100px" src="logo.png" alt="wecare">
+	<div id="navbar" style="position: absolute;
+	width: 1110.25px;
+	height: 42.11px;
+	left: 293px;
+	top: -20px;">
+        
+		<nav>
+		<ul >
+			<li style="padding: 40px;"><a href="#">Home</a></li>
+			<li style="padding: 40px;"><a href="#">Doctor</a></li>
+			<li style="padding: 40px;"><a href="#">Services</a></li>
+			<li style="padding: 40px;"><a href="#">Reviews</a></li>
+			
+		</ul></nav>
+        </div>
+    </div>
+	<div style=" background-color: white; position: absolute; top: 3.8%; left: 1400px; padding: 9px; Font-family: 'Inter';
+	font-style: normal;
+	text-align:centre;
+	width:50px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 15px;
+	/* identical to box height */
+	border-radius: 30px;
+	color: #535F82;">
+		<a href="contact us.html" style="text-decoration: none; padding-left: 6px;">Contact</a></div>
+
+        <div id="registration_box(1)" style="
+            position: absolute;
+            width: 1160px;
+            height: 700px;
+            left: 170px;
+            top: 310px;
+            background: #1D2C4D;
+            border-radius: 41px;">
+            
+            <img src="appoint_img.png" alt="" style="position: absolute;
+            width: 535px;
+            height: 636px;
+            left: 48px;
+            top: 45px;
+            
+            border-radius: 41px;">
+            <div id="registration_text" style="position: absolute;
+            width: 458px;
+            height: 46px;
+            left: 641px;
+            top: 45px;
+            
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 45px;
+            line-height: 54px;
+            
+            color: #FFFFFF;">
+            Appointment Details</div>
+            <div class="doctors_name" style="color: #ffffff; position: relative;left: 620px;top: 120px;">
+              <label>Select doctor from the list below </label>
+              
+              <select style="color: #ffffff; position: relative; left: 10px;
+              font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            
+            color: #FFFFFF;">
+                <option value="Dr. John">Dr. John Mali</option>
+                <option value="Dr. Jane">Dr. Jane Mathre</option>
+                <option value="Dr. Mark">Dr. Mark Patel</option>
+                <option value="Dr. Mark">Dr. vivek bhaiiiii</option>
+                <option value="Dr. Mark">Dr. Shankar Parekh</option>
+                <option value="Dr. Mark">Dr. Satyam Desuza</option>
+                <option value="Dr. Mark">Dr. Savita Jain</option>
+                <option value="Dr. Mark">Dr. Sushma Swaraj</option>
+                <option value="Dr. Mark">Dr. Ramesh Kumar</option>
+                <option value="Dr. Mark">Dr. Lalit Sharma</option>
+                <option value="Dr. Mark">Dr. Chetan Pathak</option>
+                <option value="Dr. Mark">Dr. Ruchi Shah</option>
+                <option value="Dr. Mark">Dr. Lokesh Vishwa</option>
+              </select>
+              <div style="position: relative;top: 40px;left: -383px;">
+              <label>Select issue:</label>
+              
+              <select style="color: #ffffff; position: relative; left: 7px;
+              font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            
+            color: #FFFFFF;">
+                <option value="Dr. John">Cardiology</option>
+                <option value="Dr. Jane">Peditracian</option>
+                <option value="Dr. Mark">Gynecology</option>
+                <option value="Dr. Mark">Psycology</option>
+                
+              </select>
+            </div>
+            </div>
+            
+            <style style="left: 100px;">
+            .doctors_name {
+             
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+            }
+            
+            .doctors_name span {
+              font-size: 16px;
+            }
+            
+            .doctors_name select {
+              background: black;
+              border: none;
+              border-bottom: 1px solid #ffffff;
+              font-size: 16px;
+              cursor: pointer;
+              outline: none;
+            }
+            </style>
+            
+            
+            <div id="pat_name" style="position: absolute;
+            width: 195.97px;
+            height: 38px;
+            left: 614px;
+            top: 212px;
+            
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            
+            color: #FFFFFF;
+            ">
+            
+              
+            
+            Patient’s Full Name</div>
+            <div id="name_cont" style="display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 10px;
+            gap: 10px;
+            
+            position: absolute;
+            width: 450px;
+            height: 40px;
+            left: 614px;
+            top: 246px;
+            
+            background: #FFFFFF;
+            border-radius: 10px;">
+            <input type="text" name="name" id="" style="height:30px; top: 0px; width: 300px; position: relative;">
+
+            </div>
+
+            <div id="m_no" style="position: absolute;
+            width: 159.36px;
+            height: 38px;
+            left: 614px;
+            top: 350px;
+            
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            
+            color: #FFFFFF;
+            ">
+            Mobile Number</div>
+
+            <div id="no_cont" style="display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 10px;
+            gap: 10px;
+            
+            position: absolute;
+            width: 450px;
+            height: 40px;
+            left: 614px;
+            top: 400px;
+            
+            background: #ffffff;
+            border-radius: 10px;">
+            <input type="text" name="name" id="" style="height:30px; top: 0px; width: 300px; position: relative;">
+
+            
+            </div>
+            
+            <div id="email_txt" style="position: absolute;
+            width: 159px;
+            height: 23px;
+            left: 614px;
+            top: 500px;
+            
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            
+            color: #ffffff;">
+            Email Address</div>
+
+            <div id="email_faided" style="position: absolute;
+            width: 531px;
+            height: 38px;
+            left: 614px;
+            top: 470px;
+            
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 200;
+            font-size: 17px;
+            line-height: 21px;
+            
+            color: #acacac;
+            ">
+            Notifications for appointment and will be sent to this Email.</div>
+            </div>
+            <div id="no_cont" style="display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 10px;
+            gap: 10px;
+            
+            position: absolute;
+            width: 450px;
+            height: 40px;
+            left: 782.5px;
+            top: 850px;
+            
+            background: #ffffff;
+            border-radius: 10px;">
+            <input type="text" name="name" id="" style="height:30px; top: 0px; width: 300px; position: relative;">
+
+            </div>
+            <div id="submit_button" >
+            <button style="display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 10px;
+            gap: 10px;
+            
+            position: absolute;
+            width: 480px;
+            height: 30px;
+            left: 782px;
+            top: 930px;
+            
+            background: #0011ff;
+            border-radius: 10px;text-align: center;"><span style="text-align:center;position: relative;bottom: 4px;">&emsp;&emsp;&emsp;&ensp;&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Submit</span></button>
+            </div>
+
+            
+
+</div>
+
+</div>
+
+<div id="footer(2)">
+    <div id="f(2)" style="position: absolute;
+    width: 1519px;
+    height: 548px;
+    left: 0px;
+    top: 1800px;
+    
+    background: #2D3869;">
+    <div id="logo_txt">
+
+    </div>
+    <div id="logo_foot" >
+        <img src="logo.png" alt="" style="position: absolute;
+        width: 123px;
+        height: 124px;
+        left: 124px;
+        top: 317px;
+        
+        background: url(image.png);
+        border-radius: 250px;">
+    
+
+    </div>
+    
+</div>
+
+<div id="footer(1)">
+<div id="f(1)" style=" position: absolute;
+width: 1104px;
+height: 448px;
+left: 210px;
+top:1560px;
+
+background: #1582EB;
+border-radius: 41px;">
+<div id="text(01)" style="position: absolute;
+width: 348px;
+height: 42px;
+left: 402px;
+top: 53px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 38px;
+line-height: 46px;
+
+color: #FFFFFF;
+">
+Subscribe To Page
+
+</div>
+
+<div id="text(02)" style="position: absolute;
+width: 419px;
+height: 52px;
+left: 342px;
+top: 117px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 23px;
+text-align: center;
+
+color: #FFFFFF;
+">
+Stay updated and get Check up reminders from us.
+
+</div>
+<div id="subscribe_container" style="position: absolute;
+width: 470px;
+height: 75px;
+left: 317px;
+top: 224px;
+
+background: #FFFFFF;
+border-radius: 58px;">
+
+<div id="inner_sub_container" style="position: absolute;
+width: 114px;
+height: 63px;
+left: 348px;
+top: 6px;
+
+background: #1582EB;
+border-radius: 58px;
+">
+<div id="sub_text" style="position: absolute;
+width: 94px;
+height: 22px;
+left: 10px;
+top: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 23px;
+text-align: center;
+
+color: #FFFFFF;
+">
+subscribe</div>
+
+<div id ="wecare" style="position: relative;
+width: 86px;
+height: 21px;
+left: -720px;
+top: 285px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 16px;
+
+color: #FFFFFF;">We Care</div>
+
+<div id="sub-1" style="position: relative;
+width: 86px;
+height: 21px;
+left: -400px;
+top: 268px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 16px;
+
+color: #FFFFFF;">Department</div>
+
+<div id="sub-1-1" style="position: relative;
+width: 86px;
+height: 21px;
+left: -400px;
+top: 298px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 16px;
+
+color:  #A19898;">Skin Care</div>
+
+<div id="sub-1-2" style="position: relative;
+width: 86px;
+height: 21px;
+left: -400px;
+top: 328px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 16px;
+
+color:  #A19898;">Eye Care</div>
+
+<div id="sub-1-3" style="position: relative;
+width: 86px;
+height: 21px;
+left: -400px;
+top: 358px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 16px;
+
+color:  #A19898;">Pathology</div>
+
+<div id="sub-1-4" style="position: relative;
+width: 86px;
+height: 21px;
+left: -400px;
+top: 388px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 16px;
+
+color:  #A19898;">Medicine</div>
+
+<div id="sub-2" style="position: relative;
+width: 90px;
+height: 21px;
+left: -150px;
+top: 163px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+
+color:#FFFFFF">Useful links</div>
+
+<div id="sub-2-1" style="position: relative;
+width: 90px;
+height: 21px;
+left: -150px;
+top: 193px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+
+color:  #A19898">About</div>
+
+<div id="sub-2-2" style="position: relative;
+width: 90px;
+height: 21px;
+left: -150px;
+top: 223px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+
+color:  #A19898">Blog</div>
+
+<div id="sub-2-3" style="position: relative;
+width: 90px;
+height: 21px;
+left: -150px;
+top: 253px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+
+color:  #A19898">Contact</div>
+
+<div id="sub-2-4" style="position: relative;
+width: 90px;
+height: 21px;
+left: -150px;
+top: 283px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+
+color: #A19898">Appointment</div>
+
+<div id="sub-3" style="position: relative;
+width: 90px;
+height: 21px;
+left: 150px;
+top: 57px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 16px;
+
+color:#FFFFFF">Services</div>
+
+<div id="sub-3-1" style="position: relative;
+width: 140px;
+height: 21px;
+left: 150px;
+top: 87px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 16px;
+color: #A19898">Emergency Services</div>
+
+<div id="sub-3-2" style="position: relative;
+width: 140px;
+height: 21px;
+left: 150px;
+top: 107px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 16px;
+
+color: #A19898">Qualified Doctors</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html
+</body>
+</html>
