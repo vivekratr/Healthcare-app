@@ -12,7 +12,7 @@ def index():
 def index1():
     import os
     import openai
-    openai.api_key ="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"
+    openai.api_key ="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"
     input_text = request.form['input-field']
     completion = openai.ChatCompletion.create(
       model="gpt-3.5-turbo",
