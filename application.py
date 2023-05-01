@@ -7,12 +7,13 @@ app = application
 @cross_origin() # its purpose is to be available to different countries
 def index():
     return render_template("landing.html")
+  
 @application.route('/gpt',methods=['GET','POST'])
 @cross_origin() # its purpose is to be available to different countries
 def index1():
     import os
     import openai
-    openai.api_key ="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"
+    openai.api_key ="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"
     input_text = request.form['input-field']
     completion = openai.ChatCompletion.create(
       model="gpt-3.5-turbo",
@@ -24,7 +25,47 @@ def index1():
     output_text=completion.choices[0].message['content']
     return render_template('landing.html',output=output_text)
 
+@application.route('/subscribe',methods=['GET','POST'])
+@cross_origin() # its purpose is to be available to different countries
+def index3():
+      import pymongo
+      email = request.form['email']
+      
+      client = pymongo.MongoClient("mongodb+srv://breakratr:breakratr@vivekdb.fwdld9x.mongodb.net/?retryWrites=true&w=majority")
+      db = client['WeCare']
+      collection_1 = db['Subscription']
+      dict = {'Email':email}
+      collection_1.insert_one(dict)
+      return render_template("landing.html")
+    
+@application.route('/contact',methods=['GET','POST'])
+@cross_origin()
+def index4():
+      return render_template("contact_us.html")
+    
+@application.route('/contacts',methods=['GET','POST'])
+@cross_origin() # its purpose is to be available to different countries
+def index5():
+      import pymongo
+      name = request.form['name']
+      email = request.form['email']
+      message = request.form['message']
+      client = pymongo.MongoClient("mongodb+srv://breakratr:breakratr@vivekdb.fwdld9x.mongodb.net/?retryWrites=true&w=majority")
+      db = client['WeCare']
+      collection_1 = db['contact']
+      dict = {'Name':name,'Email':email,'Message':message}
+      collection_1.insert_one(dict)
+      return render_template("landing.html")
 
+@application.route('/appoint',methods=['GET','POST'])
+@cross_origin()
+def index6():
+      return render_template("Appointment(1).html")
 
+@application.route('/aboutUs',methods=['GET','POST'])
+@cross_origin()
+def index7():
+      return render_template("aboutUs.html")
+    
 if __name__ == '__main__':
     application.run(debug=True)
