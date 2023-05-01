@@ -54,7 +54,8 @@ input:focus {outline:none!important;}
 </head>
 <body>
    <div id="top_header" >
-	<a href="/"><img style="width:100px" src="../static/logo.png" alt="wecare"></a>
+    <a href="/">
+	<img style="width:100px" src="../static/logo.png" alt="wecare"></a>
 	<div id="navbar" style="position: absolute;
 	width: 1110.25px;
 	height: 42.11px;
@@ -89,236 +90,38 @@ input:focus {outline:none!important;}
             height: 700px;
             left: 170px;
             top: 310px;
-            background: #1D2C4D;
+            background: #E1E1E1;
             border-radius: 41px;">
-            
-            <img src="../static/appoint_img.png" alt="" style="position: absolute;
-            width: 535px;
-            height: 636px;
-            left: 48px;
-            top: 45px;
-            
-            border-radius: 41px;">
-            <div id="registration_text" style="position: absolute;
-            width: 458px;
-            height: 46px;
-            left: 641px;
-            top: 45px;
-            
-            font-family: 'Inter';
+            <div id="resultText" style="font-family: 'Inter';
             font-style: normal;
-            font-weight: 500;
-            font-size: 45px;
-            line-height: 54px;
+            font-weight: 800;
+            font-size: 43px;
+            line-height: 52px;
+            text-align: center;
+            text-transform: capitalize;
             
-            color: #FFFFFF;">
-            Appointment Details</div>
+            color: #1580EB;
+            position: relative;
+            top: 340px;">Your appointment has been submitted we will revert back to you,
+thankyou
 
-
-            <form action="/appointed" method="POST">
-            <div class="doctors_name" style="color: #ffffff; position: relative;left: 620px;top: 120px;">
-              <label>Select doctor from the list below </label>
-              
-              <select style="color: #ffffff; position: relative; left: 10px;
-              font-family: 'Inter';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            
-            color: #FFFFFF;" name="doc_name">
-                <option value="Dr. John">Dr. John Mali</option>
-                <option value="Dr. Jane">Dr. Jane Mathre</option>
-                <option value="Dr. Mark">Dr. Mark Patel</option>
-                <option value="Dr. Mark">Dr. vivek bhaiiiii</option>
-                <option value="Dr. Mark">Dr. Shankar Parekh</option>
-                <option value="Dr. Mark">Dr. Satyam Desuza</option>
-                <option value="Dr. Mark">Dr. Savita Jain</option>
-                <option value="Dr. Mark">Dr. Sushma Swaraj</option>
-                <option value="Dr. Mark">Dr. Ramesh Kumar</option>
-                <option value="Dr. Mark">Dr. Lalit Sharma</option>
-                <option value="Dr. Mark">Dr. Chetan Pathak</option>
-                <option value="Dr. Mark">Dr. Ruchi Shah</option>
-                <option value="Dr. Mark">Dr. Lokesh Vishwa</option>
-              </select>
-              <div style="position: relative;top: 40px;left: -383px;">
-              <label>Select issue:</label>
-              
-              <select name="issue" style="color: #ffffff; position: relative; left: 7px;
-              font-family: 'Inter';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            
-            color: #FFFFFF;">
-                <option>Cardiology</option>
-                <option>Peditracian</option>
-                <option>Gynecology</option>
-                <option>Psycology</option>
-                
-              </select>
-            </div>
             </div>
             
-            <style style="left: 100px;">
-            .doctors_name {
-             
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-            }
-            
-            .doctors_name span {
-              font-size: 16px;
-            }
-            
-            .doctors_name select {
-              background: black;
-              border: none;
-              border-bottom: 1px solid #ffffff;
-              font-size: 16px;
-              cursor: pointer;
-              outline: none;
-            }
-            </style>
             
             
-            <div id="pat_name" style="position: absolute;
-            width: 195.97px;
-            height: 38px;
-            left: 614px;
-            top: 212px;
-            
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            
-            color: #FFFFFF;
-            ">
             
               
-            
-            Patient’s Full Name</div>
-            <div id="name_cont" style="display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            padding: 10px;
-            gap: 10px;
-            
-            position: absolute;
-            width: 450px;
-            height: 40px;
-            left: 614px;
-            top: 246px;
-            
-            background: #FFFFFF;
-            border-radius: 10px;">
-            <input type="text" name="name" id="" style="height:30px; top: 0px; width: 300px; position: relative;">
-
+               
             </div>
-
-            <div id="m_no" style="position: absolute;
-            width: 159.36px;
-            height: 38px;
-            left: 614px;
-            top: 350px;
+            </div>
             
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
             
-            color: #FFFFFF;
-            ">
-            Mobile Number</div>
-
-            <div id="no_cont" style="display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            padding: 10px;
-            gap: 10px;
             
-            position: absolute;
-            width: 450px;
-            height: 40px;
-            left: 614px;
-            top: 400px;
             
-            background: #ffffff;
-            border-radius: 10px;">
-            <input type="text" name="mob" id="" style="height:30px; top: 0px; width: 300px; position: relative;">
-
             
             </div>
             
-            <div id="email_txt" style="position: absolute;
-            width: 159px;
-            height: 23px;
-            left: 614px;
-            top: 500px;
-            
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            
-            color: #ffffff;">
-            Email Address</div>
-
-            <div id="email_faided" style="position: absolute;
-            width: 531px;
-            height: 38px;
-            left: 614px;
-            top: 470px;
-            
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 200;
-            font-size: 17px;
-            line-height: 21px;
-            
-            color: #acacac;
-            ">
-            Notifications for appointment and will be sent to this Email.</div>
-            </div>
-            <div id="no_cont" style="display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            padding: 10px;
-            gap: 10px;
-            
-            position: absolute;
-            width: 450px;
-            height: 40px;
-            left: 782.5px;
-            top: 850px;
-            
-            background: #ffffff;
-            border-radius: 10px;">
-            <input type="text" name="email" id="" style="height:30px; top: 0px; width: 300px; position: relative;">
-
-            </div>
-            <div id="submit_button" >
-           <input type="submit" style="display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            padding: 10px;
-            gap: 10px;
-            
-            position: absolute;
-            width: 480px;
-            height: 30px;
-            left: 782px;
-            top: 930px;
-            
-            background: #0011ff;
-            border-radius: 10px;text-align: center; padding-left: 240px;padding-bottom: 15px;" value="Submit">
-            </div></form>
+           
 
             
 
@@ -434,6 +237,7 @@ Stay updated and get Check up reminders from us.
 	color: #FFFFFF;
 	" value="Submit"></div>
 </form>
+
 <div id ="wecare" style="position: relative;
 		width: 86px;
 		height: 21px;
@@ -650,7 +454,6 @@ Stay updated and get Check up reminders from us.
 	height:30px;
 	left:150px;
 	top:110px;"></a>
-
 
 
 

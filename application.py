@@ -61,6 +61,22 @@ def index5():
 @cross_origin()
 def index6():
       return render_template("Appointment(1).html")
+    
+@application.route('/appointed',methods=['GET','POST'])
+@cross_origin()
+def index8():
+  import pymongo
+  doc_name = request.form['doc_name']
+  email = request.form['email']
+  issue = request.form['issue']
+  mob = request.form['mob']
+  name = request.form['name']
+  client = pymongo.MongoClient("mongodb+srv://breakratr:breakratr@vivekdb.fwdld9x.mongodb.net/?retryWrites=true&w=majority")
+  db = client['WeCare']
+  collection_1 = db['Appointment']
+  dict = {'Name':name,'Email':email,'Doctor name ':doc_name,'Issue':issue,'Mobile Number ':mob}
+  collection_1.insert_one(dict)
+  return render_template("appointmentSuccess.html")
 
 @application.route('/aboutUs',methods=['GET','POST'])
 @cross_origin()
