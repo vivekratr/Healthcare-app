@@ -12,17 +12,30 @@ def index():
 @cross_origin() # its purpose is to be available to different countries
 def index1():
     import os
-    import openai
-    openai.api_key ="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"
+#     import openai
+#     openai.api_key ="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"
     input_text = request.form['input-field']
-    completion = openai.ChatCompletion.create(
-      model="gpt-3.5-turbo",
-      messages=[
-        {"role": "user", "content": input_text}
-      ]
-    )
+#     completion = openai.ChatCompletion.create(
+#       model="gpt-3.5-turbo",
+#       messages=[
+#         {"role": "user", "content": input_text}
+#       ]
+#     )
+    import cohere
 
-    output_text=completion.choices[0].message['content']
+# Set up a Cohere API client with your API key
+    client = cohere.Client("osjxJajw4EvrSkcWllGOgr7XFHQJcBhaXd8RZvmC")
+
+# Define the text you want to summarize
+    text = f'''{input_text}     explain it in minimum 1000 words                                                                                                                                                                                                                                                                                                               .'''
+
+# Call the summarize method with your text
+    summary = client.summarize(text) #, num_sentences=2
+  
+# Print the summary
+    output_text = summary.summary
+
+#     output_text=completion.choices[0].message['content']
     return render_template('landing.html',output=output_text)
 
 @application.route('/subscribe',methods=['GET','POST'])
