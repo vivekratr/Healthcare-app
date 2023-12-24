@@ -34,6 +34,7 @@ def index1():
   
 # Print the summary
     output_text = summary.summary
+    # output_text=completion.choices[0].message['content']
 
 #     output_text=completion.choices[0].message['content']
     return render_template('landing.html',output=output_text)
